@@ -32,11 +32,10 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-    batchingBasedOnAgentsOption
 
 - task: DotNetCoreCLI@2
   inputs:
     command: test
     projects: '**/*TestProject2/*.csproj'
     configuration: '$(buildConfiguration)'
-    batchingBasedOnAgentsOption
+
